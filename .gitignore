@@ -95,7 +95,6 @@ Pipfile.lock
 # -----------------------------
 # AI / ML / Data
 # -----------------------------
-models/
 checkpoints/
 artifacts/
 outputs/
