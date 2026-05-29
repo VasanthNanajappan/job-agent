@@ -1,21 +1,42 @@
 import uuid
 import pandas as pd
+from pathlib import Path
 
 CSV_PATH = "data/career_pages.csv"
+
+COLUMNS = [
+    "id",
+    "company",
+    "url",
+    "platform",
+    "enabled"
+]
+
 
 class CareerPageService:
 
     @staticmethod
+    def _initialize_csv():
+        """
+        Create CSV with proper headers if it doesn't exist.
+        """
+        if not Path(CSV_PATH).exists():
+            df = pd.DataFrame(columns=COLUMNS)
+            df.to_csv(CSV_PATH, index=False)
+
+    @staticmethod
     def get_all():
         try:
+            CareerPageService._initialize_csv()
+
             df = pd.read_csv(CSV_PATH)
 
             df = df.fillna("")
 
-            return df.to_dict("records")
+            return df.to_dict(orient="records")
 
         except Exception as e:
-            print(e)
+            print(f"Error reading CSV: {e}")
             return []
 
     @staticmethod
