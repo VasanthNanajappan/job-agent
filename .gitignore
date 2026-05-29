@@ -1,0 +1,129 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# -----------------------------
+# IDE / Editor
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Environment / Secrets
+# -----------------------------
+.env
+.env.*
+*.env
+secrets.json
+config.local.json
+
+# API keys / credentials
+*.pem
+*.key
+*.crt
+credentials.json
+service-account.json
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+*.out
+*.err
+
+# -----------------------------
+# Testing / Coverage
+# -----------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# -----------------------------
+# Jupyter
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Type check / lint
+# -----------------------------
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# -----------------------------
+# Package managers
+# -----------------------------
+pip-wheel-metadata/
+poetry.lock
+
+# If using pipenv
+Pipfile.lock
+
+# -----------------------------
+# AI / ML / Data
+# -----------------------------
+models/
+checkpoints/
+artifacts/
+outputs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pickle
+*.pkl
+*.joblib
+
+# Large datasets
+data/
+datasets/
+
+# -----------------------------
+# Temporary files
+# -----------------------------
+tmp/
+temp/
+*.tmp
+
+# -----------------------------
+# OS
+# -----------------------------
+Desktop.ini
